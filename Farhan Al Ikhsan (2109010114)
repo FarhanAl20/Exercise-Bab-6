@@ -1,0 +1,47 @@
+#Tugas exercise bab 6
+print("Nama : Farhan Al Ikhsan")
+print("Kelas: C-1 SI")
+print("NPM  : 2109010114") 
+
+#1 R-6.1 (POP)
+F = ["100","200","300","400","500","600","700"]
+return_value = F.pop(3)
+print ("return_value:", return_value)
+print ("update list:",F)
+
+
+#2 R-6.4 (rekursifitas stack)
+def tampilkanAngka (batas,i = 1):
+    if(i < batas):
+        #Rekursifitas terjadi
+        tampiklkanAngka(batas,i + 1)
+        
+    print(f'perulangan ke {i}')
+# memanggil fungsi tampilan angka
+# untuk pertama kali
+    tampilkanAngka(20)
+#Clear rekursif 
+tampilkanAngka = [20]
+del tampilkanAngka [:]
+print("tampilkanAngka:", tampilkanAngka)
+​
+#3 R-6.2 (soal)
+# Misalkan tumpukan S yang awalnya kosong telah menjalankan total 25 operasi push,
+#12 operasi teratas, dan 10 operasi pop, 3 di antaranya memunculkan Empterrors yang ditangkap dan diabaikan. Ukuran S saat ini berapa? 
+# Jawaban nya = 15 ukuran S
+​
+#4 R-6.5 (rekursif)
+def tampilkanAngka (batas, i = 1):
+  if (i < batas):
+    # di sini lah rekursifitas itu terjadi
+    tampilkanAngka(batas, i + 1)
+
+  print(f'Perulangan ke {i}')
+
+# memanggil fungsi tampilanAngka
+# untuk pertama  kali
+tampilkanAngka(15)
+
+#5 R-6.6 (soal teori)
+# Konsep menjodohkan dalam aritmatika adalah penggabungan ilmu matematika dengan pemograman, contoh seperti bahasa pemograman, C++, Phython,Ruby,Dll,
+# seperti terdapat nya simbol-simbol matematika dalam bahasa pemograman itu termasuk penggabungan atau menjodohkan dalam aritmatika dan pemograman.
